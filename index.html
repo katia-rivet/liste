@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/partout.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="js/lib/jquery-3.3.1.js"></script>
+    <script src="js/supprimer.js"></script>
+    <script src="js/appelAjax.js"></script>
+
+
+    <title>Liste</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+
+                <h1>Séries</h1>
+
+                <form action="core/api/ajouter.php" method="POST">
+                 
+
+                    
+                        <label for="nom">Nom :</label>
+                        <input type="text" name="nom" id="nom">
+                    
+                    
+                        <label for="saisons">Saisons :</label>
+                        <input type="text" name="saisons" id="saisons">
+                  
+                        <label for="etat">Etat :</label>
+                        <input type="text" name="etat" id="etat">
+                   
+                    
+                        <label for="recommandation">Recommandation :</label>
+                        <input type="text" name="recommandation" id="recommandation">
+              
+                <!--    <label for="image">Image:</label>
+                    <input type="file" name="image" id="image">-->
+                 
+                    <input type="submit" value="ajouter">
+                    <!-- <input type="submit" value="modifier">
+                    <input type="submit" value="supprimer"> -->
+
+                </form>
+                <br>
+               
+                
+                        <div class="rectangle">
+                            <ul id="liste">
+                            
+                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
